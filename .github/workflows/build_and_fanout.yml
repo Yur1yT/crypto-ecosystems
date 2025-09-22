@@ -28,7 +28,7 @@ jobs:
             ${{ runner.os }}-build-
 
       - name: Build if cache miss
-        if: steps.cache.outputs.cache-hit != 'true'
+        if: steps.cache.outputs.cache-hit1 != 'true'
         run: |
           ./run.sh build
           ./run.sh test
@@ -37,7 +37,7 @@ jobs:
         run: |
           ./zig-out/bin/ce validate
 
-      - name: Repository Dispatch
+      - name: Repository Dispatch21
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.PAT }}
