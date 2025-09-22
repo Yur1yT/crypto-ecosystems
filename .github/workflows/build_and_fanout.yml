@@ -44,3 +44,5 @@ jobs:
           repository: electric-capital/taxonomy-viewer
           event-type: master-merge
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+
+          Wat a hell is that?
