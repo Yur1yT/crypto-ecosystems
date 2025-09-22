@@ -37,7 +37,7 @@ jobs:
         run: |
           ./zig-out/bin/ce validate
 
-      - name: Repository Dispatch21
+      - name: Repository Dispatch211
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.PAT }}
